@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Animasi: Persamaan Linear Satu Variabel - Kelas 8</title>
+<meta name="description" content="Video animasi 10 menit tentang Persamaan Linear Satu Variabel (PLSV) untuk siswa kelas 8, lengkap dengan contoh, soal cerita, dan latihan.">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: #fff7e6; color: #0f172a; line-height: 1.6; }
+  header { background: #0f766e; color: #fff; padding: 28px 20px; text-align: center; }
+  header h1 { margin: 0 0 8px; font-size: 1.9rem; line-height: 1.25; }
+  header p { margin: 0; color: #fde68a; }
+  main { max-width: 900px; margin: 0 auto; padding: 24px 20px 48px; }
+  .player { background: #000; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,.18); }
+  video { display: block; width: 100%; aspect-ratio: 16 / 9; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+  .meta span { background: #fff; border: 1px solid #e2e8f0; border-radius: 999px; padding: 4px 12px; font-size: .9rem; }
+  h2 { color: #0f766e; margin-top: 32px; }
+  .chapters { display: grid; gap: 10px; }
+  .chapters button { text-align: left; background: #fff; border: 2px solid #e2e8f0; border-radius: 12px; padding: 12px 16px; cursor: pointer; font: inherit; }
+  .chapters button:hover { border-color: #f97316; }
+  .chapters button strong { color: #0f766e; }
+  .chapters button span { float: right; color: #64748b; }
+  .download { display: inline-block; margin-top: 16px; background: #f97316; color: #fff; text-decoration: none; font-weight: 700; padding: 12px 20px; border-radius: 999px; }
+  footer { text-align: center; color: #64748b; font-size: .9rem; padding: 20px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Persamaan Linear Satu Variabel (PLSV)</h1>
+  <p>Video Animasi Matematika &bull; Kelas 8 &bull; Durasi 10 Menit</p>
+</header>
+
+<main>
+  <!--
+    CARA PAKAI DI WEBSITE:
+    1. Unggah file "video-plsv-kelas-8.mp4" dan file HTML ini ke folder yang sama.
+    2. Kalau videomu ada di URL lain, ganti src di bawah ini dengan URL tersebut.
+  -->
+  <div class="player">
+    <video id="video-plsv" controls preload="metadata" playsinline>
+      <source src="video-plsv-kelas-8.mp4" type="video/mp4">
+      Browser kamu tidak mendukung pemutar video. Silakan unduh videonya lewat tombol di bawah.
+    </video>
+  </div>
+
+  <div class="meta">
+    <span>⏱ 10 menit</span>
+    <span>🎬 1280 &times; 720 (HD)</span>
+    <span>🗣 Narasi Bahasa Indonesia</span>
+    <span>📚 Kelas 8</span>
+  </div>
+
+  <p>
+    Belajar PLSV pelan-pelan: apa itu variabel, koefisien, dan konstanta,
+    bentuk umum <strong>ax + b = c</strong>, prinsip timbangan seimbang,
+    sampai menyelesaikan soal cerita. Cocok ditonton di kelas maupun di rumah.
+  </p>
+
+  <h2>Bab Video — Klik untuk Lompat</h2>
+  <div class="chapters">
+    <button data-time="0">1. Pembuka dan Tujuan Belajar <span>0:00</span></button>
+    <button data-time="45">2. Apa itu PLSV? <span>0:45</span></button>
+    <button data-time="110">3. Bentuk Umum PLSV <span>1:50</span></button>
+    <button data-time="196">4. Prinsip Timbangan Seimbang <span>3:16</span></button>
+    <button data-time="264">5. Contoh 1: 2x + 3 = 11 <span>4:24</span></button>
+    <button data-time="336">6. Contoh 2: 3x &minus; 5 = 16 <span>5:36</span></button>
+    <button data-time="407">7. Soal Cerita <span>6:47</span></button>
+    <button data-time="467">8. Latihan Mandiri <span>7:47</span></button>
+    <button data-time="529">9. Rangkuman dan Penutup <span>8:49</span></button>
+  </div>
+
+  <a class="download" href="video-plsv-kelas-8.mp4" download>⬇ Unduh Video (MP4)</a>
+
+  <h2>Yang Akan Kamu Pelajari</h2>
+  <ul>
+    <li>Menjelaskan variabel, koefisien, dan konstanta.</li>
+    <li>Menuliskan bentuk umum PLSV: ax + b = c, dengan a &ne; 0.</li>
+    <li>Menyelesaikan persamaan dengan operasi yang sama di kedua ruas.</li>
+    <li>Mengubah soal cerita menjadi model matematika, lalu menyelesaikannya.</li>
+  </ul>
+</main>
+
+<footer>Video Animasi PLSV &bull; Matematika Kelas 8</footer>
+
+<script>
+  const video = document.getElementById('video-plsv');
+  document.querySelectorAll('.chapters button').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      video.currentTime = Number(btn.dataset.time);
+      video.play();
+      video.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  });
+</script>
+
+</body>
+</html>
